@@ -19,6 +19,7 @@ Connection between digital ocean database cluster and laravel 5
 3. Add new database cluster setting in laravel 
 	
 	a. In .env file
+
 		DB_CONNECTION=mysql
 		DB_HOST=127.0.0.1 
 		DB_PORT=3306 
@@ -27,13 +28,14 @@ Connection between digital ocean database cluster and laravel 5
 		DB_PASSWORD=secret 
 
 		DB_CONNECTION_SECOND=mysql 
-		DB_HOST_SECOND=127.0.0.1 
-		DB_PORT_SECOND=3306 
-		DB_DATABASE_SECOND=database2 
-		DB_USERNAME_SECOND=root 
+		DB_HOST_SECOND=testing-database1-do-user-9898878-0.b.db.ondigitalocean.com
+		DB_PORT_SECOND=28465 
+		DB_DATABASE_SECOND=bnfexpress 
+		DB_USERNAME_SECOND=bnfexpress-user
 		DB_PASSWORD_SECOND=secret
 
 	b. In config/database.php
+
 	 	'mysql' => [
 		    'driver'    => env('DB_CONNECTION'),
 		    'host'      => env('DB_HOST'),
@@ -53,17 +55,21 @@ Connection between digital ocean database cluster and laravel 5
 		],
 
 	c. Schema
-		To specify which connection to use, simply run the connection() method 
+		To specify which connection to use, simply run the connection() method
+
 			Schema::connection('mysql2')->create('some_table', function($table)
 			{
 			    $table->increments('id'):
 			});
 
 	d. Query Builder
+
 		$users = DB::connection('mysql2')->select(...);
 
 	e. Eloquent
+
 		Set the $connection variable in your model
+		
 		class SomeModel extends Eloquent {
 		    protected $connection = 'mysql2';
 		}
