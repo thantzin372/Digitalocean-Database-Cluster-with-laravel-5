@@ -13,7 +13,7 @@ Connection between digital ocean database cluster and laravel 5
 	-> CREATE DATABASE bnfexpress;
 
 	-> CREATE USER bnfexpress-user'@'%' IDENTIFIED WITH mysql_native_password BY 'MYSQL_PASSWORD';
-	
+
 	-> GRANT ALL ON bnfexpress.* TO bnfexpress-user'@'%';
 
 3. Add new database cluster setting in laravel 
@@ -69,7 +69,7 @@ Connection between digital ocean database cluster and laravel 5
 		}
 
 
-REF
+REFERENCE
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-scalable-laravel-6-application-using-managed-databases-and-object-storage#step-2-creating-a-new-mysql-user-and-database
 
