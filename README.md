@@ -28,7 +28,7 @@ Connection between digital ocean database cluster and laravel 5
 		DB_PASSWORD=secret 
 
 		DB_CONNECTION_SECOND=mysql 
-		DB_HOST_SECOND=testing-database1-do-user-9898878-0.b.db.ondigitalocean.com
+		DB_HOST_SECOND=testing-database-do-user-9898878-0.b.db.ondigitalocean.com
 		DB_PORT_SECOND=28465 
 		DB_DATABASE_SECOND=bnfexpress 
 		DB_USERNAME_SECOND=bnfexpress-user
@@ -69,7 +69,7 @@ Connection between digital ocean database cluster and laravel 5
 	e. Eloquent
 
 		Set the $connection variable in your model
-		
+
 		class SomeModel extends Eloquent {
 		    protected $connection = 'mysql2';
 		}
