@@ -75,6 +75,13 @@ Connection between digital ocean database cluster and laravel 5
 		}
 
 
+
+Benefits of Managed Databases
+
+https://www.digitalocean.com/community/tech_talks/benefits-of-managed-databases
+
+https://www.digitalocean.com/community/questions/droplet-mysql-vs-managed-mysql-speed-and-migration
+
 REFERENCE
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-scalable-laravel-6-application-using-managed-databases-and-object-storage#step-2-creating-a-new-mysql-user-and-database
